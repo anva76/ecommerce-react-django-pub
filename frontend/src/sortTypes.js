@@ -1,0 +1,5 @@
+export const SORT_PRICE_LOW = "price"
+export const SORT_PRICE_HIGH = "-price"
+export const SORT_NAME_ASC = "name"
+export const SORT_NAME_DESC = "-name"
+export const SORT_LATEST = "latest"
