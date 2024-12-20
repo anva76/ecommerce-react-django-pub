@@ -23,6 +23,8 @@ export const SORT_PRODUCTS = "SORT_PRODUCTS"
 export const UPDATE_FILTERS = "UPDATE_FILTERS"
 export const FILTER_PRODUCTS = "FILTER_PRODUCTS"
 export const CLEAR_FILTERS = "CLEAR_FILTERS"
+export const SHOW_FILTERS = "SHOW_FILTERS"
+export const HIDE_FILTERS = "HIDE_FILTERS"
 
 // Cart
 export const ADD_ITEM = "ADD_PRODUCT"

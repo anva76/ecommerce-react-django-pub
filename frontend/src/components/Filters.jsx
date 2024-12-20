@@ -6,7 +6,9 @@ import CategoryAndBrandFilters from "./CategoryAndBrandFilters"
 import PriceMinMaxFilter from "./PriceMinMaxFilter"
 
 const Filters = ({ brands, categories }) => {
-  const { clearFilters } = useGlobalContext()
+  const { clearFilters, filtersVisible } = useGlobalContext()
+
+  if (!filtersVisible) return
 
   return (
     <section className="filter-box">

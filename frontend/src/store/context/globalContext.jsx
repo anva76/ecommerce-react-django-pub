@@ -20,6 +20,12 @@ import {
   _register,
 } from "../../utils/netUtils"
 
+// Check screen size and filter box visibility
+const isScreenLarge = () => {
+  console.log(window.matchMedia("(min-width: 768px)").matches)
+  return window.matchMedia("(min-width: 768px)").matches
+}
+
 // -------------------------------------------------------
 
 const initialGenericState = {
@@ -28,6 +34,7 @@ const initialGenericState = {
   categoriesAndBrandsLoading: false,
   fetchError: false,
   numProducts: 0,
+  filtersVisible: isScreenLarge(),
 }
 
 const initialFilterState = {
@@ -156,6 +163,18 @@ export const GlobalProvider = ({ children }) => {
     })
   }
 
+  const hideFilters = () => {
+    genericDispatch({
+      type: ACTIONS.HIDE_FILTERS,
+    })
+  }
+
+  const showFilters = () => {
+    genericDispatch({
+      type: ACTIONS.SHOW_FILTERS,
+    })
+  }
+
   // Cart
   const addItem = (item) => {
     cartDispatch({ type: ACTIONS.ADD_ITEM, payload: item })
@@ -249,6 +268,8 @@ export const GlobalProvider = ({ children }) => {
         ...cartState,
         ...authState,
         ...genericState,
+        hideFilters,
+        showFilters,
         genericDispatch,
         updateSort,
         updateFilters,

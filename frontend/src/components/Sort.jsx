@@ -10,8 +10,10 @@ import {
 } from "../sortTypes"
 
 const Sort = () => {
-  const { numProducts, updateSort, filters, filtersApplied } =
+  const { numProducts, updateSort, filters, filtersApplied, filtersVisible } =
     useGlobalContext()
+
+  if (!filtersVisible) return
 
   return (
     <section className="flexi-section2">

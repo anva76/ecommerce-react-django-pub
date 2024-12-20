@@ -54,6 +54,21 @@ const genericReducer = (state, action) => {
     return { ...state, categoriesAndBrandsLoading: false, fetchError: true }
   }
 
+  // Hide and show filters
+  if (action.type === ACTIONS.SHOW_FILTERS) {
+    return {
+      ...state,
+      filtersVisible: true,
+    }
+  }
+
+  if (action.type === ACTIONS.HIDE_FILTERS) {
+    return {
+      ...state,
+      filtersVisible: false,
+    }
+  }
+
   throw new Error(`genericReducer: Undefined action type - "${action.type}"`)
 }
 
