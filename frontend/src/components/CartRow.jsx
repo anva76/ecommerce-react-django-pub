@@ -33,7 +33,7 @@ const CartRow = ({
           {name}
         </Link>
       </div>
-      <div>${finalPrice}</div>
+      <div>⌑{finalPrice}</div>
       <div className="cart-quantity-box">
         {withBtns && (
           <button
@@ -63,7 +63,7 @@ const CartRow = ({
           </button>
         )}
       </div>
-      <div className="grid-item-end">${subtotal.toFixed(2)}</div>
+      <div className="grid-item-end">⌑{subtotal.toFixed(2)}</div>
     </>
   )
 }

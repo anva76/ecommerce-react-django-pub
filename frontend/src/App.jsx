@@ -16,6 +16,7 @@ import {
   RegisterPage,
 } from "./pages"
 import { AuthGuard } from "./components"
+import AboutPage from "./pages/AboutPage"
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: "register",
         element: <RegisterPage />,
+      },
+      {
+        path: "about",
+        element: <AboutPage />,
       },
       {
         path: "*",

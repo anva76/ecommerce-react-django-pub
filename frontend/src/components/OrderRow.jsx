@@ -12,7 +12,7 @@ const OrderRow = ({ order }) => {
         </Link>
       </div>
       <div>{order.status}</div>
-      <div>${order.total_amount}</div>
+      <div>⌑{order.total_amount}</div>
       <div>{new Date(order.updated_at).toLocaleString()}</div>
       <div>{new Date(order.created_at).toLocaleString()}</div>
     </>

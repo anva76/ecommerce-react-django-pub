@@ -58,9 +58,15 @@ const NavBar = () => {
               to="/orders"
               className="nav-link"
             >
-              My Orders
+              Orders
             </NavLink>
           )}
+          <NavLink
+            to="/about"
+            className="nav-link"
+          >
+            About
+          </NavLink>
         </div>
         <div className="user-buttons">
           <UserButtons />

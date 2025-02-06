@@ -8,12 +8,12 @@ const ProductList = ({ products }) => {
     if (product.discounted_price) {
       return (
         <div className="price-grp">
-          <div className="product-price">${product.discounted_price}</div>
-          <div className="product-old-price">${product.price}</div>
+          <div className="product-price">⌑{product.discounted_price}</div>
+          <div className="product-old-price">⌑{product.price}</div>
         </div>
       )
     } else {
-      return <div className="product-price">${product.price}</div>
+      return <div className="product-price">⌑{product.price}</div>
     }
   }
 

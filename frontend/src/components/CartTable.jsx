@@ -34,7 +34,7 @@ const CartTable = ({ withBtns, items }) => {
       </div>
       <div className="cart-table-footer">
         <h3>Total</h3>
-        <h3>${calcTotal().toFixed(2)}</h3>
+        <h3>⌑{calcTotal().toFixed(2)}</h3>
       </div>
     </section>
   )

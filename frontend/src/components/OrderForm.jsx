@@ -87,6 +87,7 @@ const OrderForm = ({ readOnly, displayOrder }) => {
             name="phone"
             id="phone"
             required
+            placeHolder={readOnly || "+999-999-999-9999"}
             readOnly={readOnly}
             value={displayOrder?.phone}
           />

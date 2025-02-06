@@ -6,6 +6,9 @@ from .serializers import (
     OrderDetailSerializer,
 )
 from rest_framework import authentication, permissions
+from rest_framework.exceptions import ValidationError
+
+ValidationError.status_code = 422
 
 
 class OrderViewSet(

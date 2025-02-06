@@ -51,12 +51,12 @@ const ProductPage = () => {
     if (product.discounted_price) {
       return (
         <div className="price-grp">
-          <div className="product-price">${discounted_price}</div>
-          <div className="product-old-price">${price}</div>
+          <div className="product-price">⌑{discounted_price}</div>
+          <div className="product-old-price">⌑{price}</div>
         </div>
       )
     } else {
-      return <div className="product-price">${price}</div>
+      return <div className="product-price">⌑{price}</div>
     }
   }
 

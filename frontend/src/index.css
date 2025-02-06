@@ -159,7 +159,7 @@ font-weight: bold;
 .article-text {
   display: flex;
   flex-direction: column;
-  color: var(--color-grey-3);
+  color: var(--color-grey-2);
   line-height: 1.8;
 }
 

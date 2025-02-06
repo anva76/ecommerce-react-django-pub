@@ -203,7 +203,9 @@ export const GlobalProvider = ({ children }) => {
       return true
     } else {
       cartDispatch({ type: ACTIONS.ORDER_SUBMIT_ERROR })
-      toast.error("Something went wrong. Unable to submit the order.")
+      toast.error(
+        "Unable to submit the order. Please check the form data and try again."
+      )
       return false
     }
   }
